@@ -346,7 +346,7 @@ loading
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 53vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -375,7 +375,10 @@ loading
 .video {
   position: absolute;
   height: auto;
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   background-size: cover;
   z-index: -10;
 }
