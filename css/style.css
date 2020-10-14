@@ -356,7 +356,7 @@ loading
   padding: 0 20px;
   text-align: center;
   z-index: 2;
-  color: rgb(236 207 232);
+  color: white;
 }
 
 .logo-title {
@@ -381,6 +381,8 @@ loading
   height: auto;
   background-size: cover;
   z-index: -10;
+  right: 0;
+  bottom:0;
 }
 
 /* --------------
