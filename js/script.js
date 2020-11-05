@@ -47,24 +47,6 @@ $(function () {
   });
 });
 
-// ハンバーガーメニュー
-$ (function (){
-  
-  $(".btn-gnavi").on("click", function() {
-    let leftVal = 0;
-    if($(this).hasClass("open")) {
-      leftVal = -300;
-      $(this).removeClass("open");
-      $("#wrapper").removeClass("open");
-    } else {
-      $(this).addClass("open");
-      $("#wrapper").addClass("open");
-    }
-
-    $("#global-navi").stop().animate({
-      left: leftVal
-    }, 200);
-  });
 
   let $mask  = $('#mask');
   $mask.on('click', function() {
@@ -82,8 +64,7 @@ $ (function (){
       left: leftVal
     }, 200);
   });
-    
-});
+  
 // service-section fadein
 $(function(){
   $('.scrollanime').css("opacity","0");
