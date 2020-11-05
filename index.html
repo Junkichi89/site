@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <meta property='og:type' content='website'>
   <meta property='og:title' content='Jumpei Asanumaのポートフォリオ'>
@@ -31,7 +33,11 @@
 </head>
 
 <body class="drawer drawer--left">
-  
+  <script>
+    $(function() {
+        $('.drawer').drawer();
+    });
+    </script>
 
   <div id="load">
     <div>G</div>
@@ -579,9 +585,9 @@
   <script type='text/javascript' src="js/lazysizes/lazysizes.min.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
 
-  <!-- コンタクトフォーム用 -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <!-- コンタクトフォーム用 
+ハンバーガーメニューのJqueryと被ってしまうので、一旦コメントにしておきます・・・
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> -->
 <script src="js/mailform-js.php"></script>
 
 
@@ -597,13 +603,6 @@
 		});
 	})( jQuery );
 </script>
-
-<!-- ハンバーガーJquery -->
-<script>
-  $(function() {
-      $('.drawer').drawer();
-  });
-  </script>
 
 <!-- フリガナ自動入力ライブラリここまで -->
 
@@ -624,6 +623,6 @@
 </script>
 <!-- ご希望の日時選択ライブラリここまで -->
   <!-- コンタクトフォーム用 -->
-
+<!-- ハンバーガーJquery -->
 </body>
 </html>
