@@ -911,7 +911,7 @@ media Queries 767
   }
 
   .logo-title {
-    font-size: 28px;
+    font-size: 7vw;
     letter-spacing: 0.16em;
   }
 
@@ -1099,4 +1099,8 @@ media Queries 767
   .footer .inner {
     padding: 20px 0;
   }
+}
+
+.content {
+  overflow-x: hidden;
 }
